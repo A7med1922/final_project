@@ -631,7 +631,7 @@ input[type=submit]{
     width: 80px;
     height: 80px;
     border-radius: 7px;
-    transition: 0.5s ease;
+     transition: 0.23s ease;
 }
 .testimonial .our-clients .total p{
     color: var(--paragragh-color);
@@ -646,7 +646,7 @@ input[type=submit]{
     font-family: var(--mainfont);
 }
 .testimonial .our-clients .total .img-name .name p{
-    font-family: cursive , 'Rubik';
+    font-family: 'Rubik';
     letter-spacing: 1px;
 }
 .testimonial .our-clients .total{
@@ -659,13 +659,15 @@ input[type=submit]{
     border-radius: 10px;
     /* background-color: var(--maincolor1); */
 }
-.testimonial .our-clients .total:hover .img-name img
-{
+.testimonial .our-clients .total:hover .img-name img{
     filter: drop-shadow(4px 9px 9px black);
     border-radius: 50%;
     transform: scale(1.1);
 }
-
+.testimonial .our-clients .total:hover .img-name .name p{
+    font-family: cursive , 'Rubik';
+    color: var(--maincolor1);
+}
 .testimonial .our-clients .total:active{
     border: 2px solid var(--maincolor2);
 }
