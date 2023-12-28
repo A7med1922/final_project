@@ -236,7 +236,7 @@ header .img_bottom {
 .about .about_vision .our-story h4{
     color: black;
     color: var(--maincolor2);
-/*     font-weight: 100; */
+    font-weight: 100;
     font-size: 18.5px;
     font-family: sans-serif;
 }
@@ -1458,7 +1458,10 @@ label #bars, label #cancel{
     .about .about_vision .our-vision {
         margin: 7vh 0 10vh 0;
     }
-
+    .about .about_vision .our-story h4
+    {
+         font-weight: 700;
+    }
     .service .types{
         grid-template-columns: 50% 50%;
         justify-content: center;
