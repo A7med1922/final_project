@@ -234,7 +234,8 @@ header .img_bottom {
     font-family: var(--mainfont);
 }
 .about .about_vision .our-story h4{
-    color: black;
+    color: black; 
+    
     color: var(--maincolor2);
     font-weight: 100;
     font-size: 18.5px;
