@@ -234,7 +234,6 @@ header .img_bottom {
     font-family: var(--mainfont);
 }
 .about .about_vision .our-story h4{
-    color: black; 
     color: var(--maincolor2);
     font-weight: 100;
     font-size: 18.5px;
@@ -1237,6 +1236,7 @@ nav ul .ul-bg li .pages {
         font-size: 40px;
         margin-bottom: 4vh;
     }
+
    .about .about_vision .center{
       margin-bottom:6vh;   
     }
@@ -1430,12 +1430,17 @@ header .bg .introduction h2   {
       font-size: 23px;
    }
 
+   nav ul .ul-bg
+{
+    padding-top: 4vh;
+}
 label #bars, label #cancel{
     margin-right: 0vh;
   }
     .navBar .bg-color2 .bars h1{
         font-size: 39px;
     }
+
     nav ul .ul-bg li .pages {
         top: -9.1%;
         left: 63%;
@@ -1449,24 +1454,23 @@ label #bars, label #cancel{
     nav ul .ul-bg li .pages a {
         font-size: 12px;
     }
-    nav ul .ul-bg
-    {
-        padding-top: 4vh;
-    }
    /* end header and nav style */  
 
     .about .about_vision .our-story h4, .about .about_vision .our-story p {
         line-height: normal;
     }
-     .about .about_vision  p{line-height: normal;} 
+     .about .about_vision  p{
+        line-height: normal;
+    } 
+    .about .about_vision .our-story h4 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 3.5vh;
+    }
     .about .about_vision .our-vision {
         margin: 7vh 0 10vh 0;
     }
- .about .about_vision .our-story h4 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 3.5vh;
-}
+
     .service .types{
         grid-template-columns: 50% 50%;
         justify-content: center;
