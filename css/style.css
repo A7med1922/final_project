@@ -1,0 +1,1637 @@
+:root{
+    --mainfont:'Roboto', sans-serif;
+    --maincolor1: #dd9d5d; 
+    --maincolor2:#3d2d28;
+    --background_color:#fffbf2;
+    --paragragh-color:#7d7671;
+   --second-font:'M PLUS Rounded 1c', sans-serif;
+   --bg-color:#2c1919e6;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: var(--background_color);
+}
+/* start header */
+header{
+    height: 100vh;
+    background-image: url(../img/carousel-1.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+header .bg{
+    background-color: #2c1919bd;;
+    height: 100vh;    
+}
+/* start nav style */
+nav {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color:#33211d;
+    background-color: #271919;
+    z-index:101 ;
+    border-bottom: 2px solid var(--maincolor2);
+}
+nav .logo a{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;   
+}
+nav ul .ul-bg{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    list-style: none;
+}
+nav ul .ul-bg li a { 
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    border: 1px solid transparent;
+    font-size: 18px;
+    padding: 5px 0;
+}
+nav ul .ul-bg li a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--maincolor1);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+}
+nav ul .ul-bg li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+nav ul .ul-bg li  .mark{
+    color: var(--maincolor1);
+} 
+nav ul .ul-bg li a:hover{
+    color: var(--maincolor1);
+} 
+nav .logo a,
+nav ul .ul-bg li a {
+    color: white;
+    font-family: var(--mainfont);
+    text-decoration: none;
+}
+.logo i {
+    font-size: 29px;
+    color: var(--maincolor1);
+}
+ .logo i:hover{
+    color:gold;
+} 
+nav ul .ul-bg li {
+    transition: 0.5s ease;
+    font-size: 16px;
+}
+nav ul .ul-bg .list{
+    transition: 0.5s ease;
+}
+nav ul .ul-bg .list .pages p:hover{
+    transform: scale(1.2);
+}
+nav ul .ul-bg li:hover{
+    transform: scale(1.2);
+}
+.fa-caret-right{
+    display: none;
+}
+nav ul .ul-bg li .pages{
+    padding: 10px;
+    background-color: var(--background_color);
+    display: none;
+    position: absolute;
+    top: 24px;
+    width: 15vh;
+    text-align: center;
+    border-radius: 5px;
+}
+nav ul .ul-bg li .pages hr {
+    width: 80%;
+    margin: auto;
+    opacity: 0.3;
+}
+nav ul .ul-bg li .pages a {
+    color:var(--maincolor2);
+    font-size: 14px;
+}
+nav ul .ul-bg li .pages p {
+   margin: 2px 0;
+}
+nav ul .ul-bg .list:hover .pages{
+    display: block;
+}
+nav ul .ul-bg li .pages a:hover{
+    color: var(--maincolor1);
+} 
+/* end nav style */
+header .bg .introduction{
+    text-align: center;
+    padding-top: 43vh;
+    font-family: var(--mainfont);
+}
+header .bg .introduction h3 {
+    color: var(--maincolor1);
+    text-transform: capitalize;
+    font-size: 25px;
+}
+header .bg .introduction h1 {
+    color: white;
+    font-size: 105px;
+    text-transform: uppercase;
+}
+header .bg .introduction h2{
+    color: aliceblue;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+header .img_bottom img{
+    height: 4vh;
+    margin-top: -10px;
+    width: 100%;
+}
+header .img_bottom {
+    margin-top: -2vh;
+}
+/* end header */
+/* start section ==> about */
+.repeat{
+    text-align: center;
+    margin: 11vh 0px 7vh;
+}
+.repeat .col{
+    height: 11vh;
+    width: 1.6px;
+    background-color: var(--maincolor1);
+    margin: auto;
+    margin-bottom: 1vh;
+}
+.repeat p{
+    color: var(--maincolor1);
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+.repeat h2{
+    font-size: 45px;
+    text-transform: capitalize;
+    color: var(--maincolor2);
+    font-family: var(--mainfont);
+}
+/* end about_us div */
+
+/* start about_vision */
+.about .about_vision {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.about .about_vision .our-story, .our-vision{
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 3vh;
+}
+.about .about_vision .center img{
+    width: 100%;
+}
+.about .about_vision h3{
+    color: var(--maincolor2);
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: var(--mainfont);
+}
+.about .about_vision .our-story h4{
+    color: black;
+    font-weight: 100;
+    font-size: 18.5px;
+    font-family: sans-serif;
+}
+.about .about_vision .our-story p, .our-vision p
+{
+    color:var(--paragragh-color);
+    font-family: 'Rubik', sans-serif;
+} 
+.about .about_vision .our-story p
+{
+    line-height: 3.2vh;
+}
+.about .about_vision .our-story a
+{
+    background-color: var(--maincolor2);
+    color: white;
+}
+.douple  li {
+    padding: 5px 0px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: var(--maincolor2);
+}
+.douple li i{
+    color: var(--maincolor1);
+    padding-right: 9px;
+    font-size: 19px;
+}
+.about .about_vision .our-vision a{
+    color: var(--maincolor2);
+    background-color: var(--maincolor1);   
+}
+.about .about_vision .our-story a:hover{
+    color: var(--maincolor2);
+    background-color: var(--maincolor1);
+    box-shadow:  8px 12px 16px 0 var(--maincolor2);
+}
+.about .about_vision .our-vision a:hover{
+    background-color: var(--maincolor2);
+    color: white;
+    box-shadow: 8px 12px 16px 0 var(--maincolor1);
+}
+.about .about_vision a{
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-family: var(--mainfont);
+    transition: .3s;
+    text-align: center;
+    margin: 3vh 0vh; 
+}
+/* end section ==> about */
+
+/* start section service */
+.service .types{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr 2fr;
+    grid-template-rows: repeat(2,1fr);
+    gap: 5vh 1.6vh;
+    margin-bottom: 12vh;
+}
+.service .types img{
+    width: 160px;
+    height: 160px;
+}
+.service .types .service-inform{
+    margin: auto;
+}
+.service .types .service-inform .line1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1vh;
+}
+.service .types .service-inform .line1 h3{
+    color: var(--maincolor2);
+    text-transform: capitalize;
+    font-family: var(--second-font);
+}
+.service .types .service-inform p{
+    color:var(--paragragh-color);
+    font-family: 'Rubik', sans-serif;
+}
+.service .types .service-inform .line1 i {
+    width: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--maincolor1);
+    font-size: 20px;
+}
+/* end service types  */
+
+/* start service offers */
+.service .service-offer{
+    height: 60vh;
+    background-image: url(../img/bg.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.service .service-offer .bg-color{
+    height: 60vh;
+    background-color:var(--bg-color);
+}
+.service .service-offer .bg-color .main-offer{
+    text-align: center;
+    margin: 10vh auto;
+}
+.service .service-offer .bg-color .main-offer h2 {
+    text-transform: uppercase;
+    font-family: var(--mainfont);
+    color: var(--maincolor1);
+    font-size: 45px;
+}
+.service .service-offer .bg-color .main-offer h3{
+    text-transform: capitalize;
+    font-size: 29px;
+    font-weight: 900;
+    color: white;
+    padding: 5px;  
+    font-family:var(--second-font)
+}
+.service .service-offer .bg-color .main-offer p{
+    margin-bottom: 4.5vh;
+    color: white;
+    padding: 5px;
+    font-family:var(--second-font)
+}
+
+.form-offer form input{
+   padding: 13px;
+   margin-left: -5px;
+}
+.form-offer form .email{
+    transition: 0.3s ease;
+}
+.form-offer form .submit{
+    background-color: var(--maincolor1);
+    color:var(--maincolor2);
+    font-weight: bolder;
+    padding: 14px;
+    border: 2px;
+    transition: 0.3s ease;   
+}
+input[type=submit]{
+    cursor: pointer;
+}
+.form-offer form .submit:active{
+   scale: 1.09;
+}
+.form-offer form .email:focus{
+    outline: 2px solid var(--maincolor1);
+}
+.service .service-offer .img_top img {  
+    height: 4vh;
+    margin-top: -10px;
+    width: 100%;
+}
+.service .service-offer .img_top {
+    margin-top: -2vh;
+}
+.service .service-offer .bg-color .img_bottom img{
+    margin-top: -4px;
+    height: 4vh;
+    width: 100%;
+}
+.service .service-offer {
+    margin-bottom: 10vh;
+}
+/* end service offer==> end section service */
+
+/* start section menu */
+.menu .menu-contant{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: auto;
+    gap: 3vh 9vh;
+}
+.menu .menu-contant .cold-coffee .Cold, .menu .menu-contant .hot-coffee .Hot{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+}
+.drink{
+    display: flex;
+    column-gap: 2vh;
+}
+.menu .menu-contant h3, .menu .menu-contant .lorem h4 {
+    color: var(--maincolor2);
+    text-transform: capitalize;
+    font-family:  var(--mainfont);
+}
+.menu .menu-contant .img-coffee img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.menu .menu-contant .img-coffee{
+    transition: 0.3s ease;
+}
+.menu .menu-contant .img-coffee:hover{
+    scale: 1.1;
+}
+.menu .menu-contant .img-coffee .salary{
+    position: relative;
+    bottom: 83%;
+    left: 62%;
+    width: 30px;
+    padding: 6px;
+    height: 30px;
+    background-color:var(--maincolor1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease; 
+}
+.menu .menu-contant .img-coffee .salary:hover{
+  background-color: var(--maincolor2);
+  color: white;
+}
+.menu .menu-contant  h3{
+    padding-bottom: 5vh;
+    font-size: 25px;
+}
+.menu .menu-contant .lorem{
+    padding: 2vh 0vh;
+}
+.menu .menu-contant .lorem h4{
+    font-size: 17px;
+    padding-bottom: 0.5vh;
+}
+.menu .menu-contant .lorem p{
+    color:var(--paragragh-color);
+    font-family: 'Rubik', sans-serif;
+}
+/* end section menu */
+
+/* start section pages */
+.main-pages{ 
+    margin: 15vh 0vh;
+}
+.main-pages .reservation{
+    padding: 0vh 10%;  
+    overflow: hidden;
+}
+.main-pages .reservation .Reserv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-pages .reservation .online-reservation{
+    width: 50%;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+.main-pages .reservation .online-reservation .bg-color3{
+    height: 80vh;
+    background-color: #372121db;
+    display: flex;
+    align-items: center;
+    padding-left: 6vh;
+}
+.main-pages .reservation  .online-reservation .bg-color3 .container h2 {
+    text-transform: uppercase;
+    font-family: var(--mainfont);
+    color: var(--maincolor1);
+    font-size: 45px;
+    padding-bottom: 1vh;
+}
+.main-pages .reservation   h3{
+    text-transform: capitalize;
+    font-size: 29px;
+    font-weight: 900;
+    color: white;
+    padding-bottom:3vh;
+    font-family: var(--second-font);
+}
+.main-pages .reservation .online-reservation .bg-color3 .container p{
+    color: rgb(242, 237, 237);
+    font-family: 'Rubik';
+    padding-bottom: 4vh;
+    width: 80%;
+}
+.main-pages .reservation .online-reservation .bg-color3 .container ul li {
+    padding-bottom: 2vh;
+    color: #fffeff;
+    font-family: 'Rubik';
+}
+/* end online reservation style */
+
+/* start form reservation style */
+.main-pages .reservation .form-reservation{
+    width: 50%;
+   background-image: url(../img/bg.jpg);
+   background-size: cover;
+}
+.main-pages .reservation .form-reservation .bg-color4{
+    background-color: #372121f7;
+    height: 80vh;
+    text-align: center;
+    padding-top: 5vh;
+}
+.main-pages .reservation .form-reservation .bg-color4  h3{
+ padding: 4vh;
+}
+.main-pages .reservation .form-reservation .bg-color4 form input,select{
+    width: 85%;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid var(--paragragh-color);
+    color: var(--paragragh-color);
+}
+.main-pages .reservation .form-reservation .bg-color4  form input:focus,  select:focus{
+    outline: 2px solid var(--maincolor1);
+    border: 2px solid transparent;
+}
+.main-pages .reservation .form-reservation .bg-color4 form div {
+    padding-bottom: 3vh;
+}
+.main-pages .reservation .form-reservation .bg-color4 form  #sub{
+    background-color: var(--maincolor1);
+    font-size: large;
+    color: var(--maincolor2);
+    border: 1px solid var(--paragragh-color);
+    transition: 0.3s ease;
+}
+.main-pages .reservation .form-reservation .bg-color4 form  #sub:active{
+    outline: 2px solid black;
+   transform: translateY(3px);
+   scale: 1.01;
+}
+.main-pages .reservation .form-reservation .bg-color4 form select option{
+    color: var(--maincolor2);
+    background-color: var(--background_color);
+}
+.main-pages .reservation .img_top{
+  margin-top: -3.5vh;  
+}
+.main-pages .reservation .img_top img{
+    width: 100%;
+    height: 4vh;
+}
+.main-pages .reservation .Reserv .img_bottom{
+    width: 80%;   
+}
+.main-pages .reservation .Reserv .img_bottom img{
+    width: 80%;
+    height: 4vh;
+    position: absolute;
+    margin-top: -0.4vh;
+}
+/* end reservation */
+
+/* start Testimonial style */
+.testimonial .our-clients{
+    display:flex;
+    width: 90%;
+    margin: auto;
+    gap: 5vh;
+}
+.testimonial .our-clients .total .img-name{
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+  padding-bottom: 2vh;
+}
+.testimonial .our-clients .total .img-name img{
+    width: 80px;
+    height: 80px;
+    border-radius: 7px;
+    transition: 0.5s ease;
+}
+.testimonial .our-clients .total .img-name img:hover{
+    filter: drop-shadow(4px 9px 9px black);
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+.testimonial .our-clients .total p{
+    color: var(--paragragh-color);
+    font-family: 'Rubik', sans-serif;
+}
+.testimonial .our-clients .total .img-name .name p, h3{
+    text-transform: capitalize;
+}
+.testimonial .our-clients .total .img-name .name h3{
+    padding-bottom: 1.5vh;
+    color: var(--maincolor2);
+    font-family: var(--mainfont);
+}
+.testimonial .our-clients .total .img-name .name p{
+    font-family: cursive , 'Rubik';
+    letter-spacing: 1px;
+}
+.testimonial .our-clients .total{
+    transition: 0.5s ease;
+    padding: 10px;
+    border: 2px solid transparent;
+}
+.testimonial .our-clients .total:hover{
+    border: 2px solid var(--maincolor1);
+    border-radius: 10px;
+}
+.testimonial .our-clients .total:active{
+    border: 2px solid var(--maincolor2);
+}
+/* end Testimonial */
+
+/* start footer style */
+footer{
+    background-image: url(../img/bg.jpg);
+    background-size: 100% 100%;
+    height:55vh ;
+    margin-top: 10vh;
+    overflow: hidden;
+}
+footer .bg-color2
+{
+    background-color: #372121db;
+    height: 55vh;
+}
+footer .bg-color2 .foot{
+    display: flex;
+    height: 42vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 30px;
+}
+footer .bg-color2 .foot .list{
+    width: 25%;
+    color: white;
+    font-family: var(--mainfont);
+}
+footer .bg-color2 .foot .list h2{
+    font-family: var(--mainfont);
+    padding-bottom: 3vh;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+footer .bg-color2 .foot .list1 li{
+    padding-bottom: 2vh;
+    font-size: 15px;
+}
+footer .bg-color2 .foot .list1 li i {
+    padding-right: 0.8vh;
+    transition: 0.5s ease;
+}
+footer .bg-color2 .foot .list2 .icons{
+    display: flex;
+    gap: 1vh;
+}
+footer .bg-color2 .foot .list1 li i:hover{
+    color: var(--maincolor1);
+}
+footer .bg-color2 .foot .list p, li{
+    font-family: 'Rubik';
+}
+footer .bg-color2 .foot .list p{
+    padding-bottom: 2vh;
+    width: 83%;
+}
+footer .bg-color2 .foot .list3 li{
+    line-height: 3vh;
+}
+footer .bg-color2 .foot .list2 .icons  a i{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 20px;
+    transition: 0.5s ease;
+    color: var(--background_color);
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+footer .bg-color2 .foot .list2 .icons a i:hover{
+    color: var(--maincolor2);
+    background-color: var(--background_color);
+    transform: scale(1.2);
+}
+footer .bg-color2 .foot .list4 form input[type=email]{
+    width: 50%;
+}
+footer .bg-color2 .foot .list4 form input[type=submit]{
+    width: 30%;
+}
+
+footer hr{ 
+  background-color: #7d7671;
+  opacity: 0.09;
+}
+footer .bg-color2 .end{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    padding: 8px 0 4px 0;
+    font-family: 'Rubik';
+    
+}
+
+footer .bg-color2 .end .one{
+    padding-bottom: 1vh;
+}
+footer .bg-color2 .end p span{
+    color: var(--maincolor1);
+    font-weight: bold;
+}
+footer .bg-color2 .img_bottom img{
+    margin-top: -3px;
+    width: 100%;
+    height: 4vh;
+}
+/* end footer */
+
+
+/* start about website */
+.navBar{
+    height: 60vh;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.navBar .bg-color2{
+    height: 60Vh;
+    background-color:var(--bg-color);
+}
+.navBar  .img_top{
+    margin-top: -3.7vh;
+}
+.navBar .img_top img {
+    width: 100%;
+    height: 4vh;
+}
+.navBar .bg-color2 .bars{
+    text-align: center;
+    padding-top: 27vh;
+    color: white;
+}
+.navBar .bg-color2 .bars h1{
+    text-transform: uppercase;
+    font-family: var(--mainfont);
+    font-size: 44px;
+    padding: 2vh;
+}
+.navBar .bg-color2 .bars h1, a{
+    color: white;
+}
+.navBar .bg-color2 .bars a {
+    font-family: var(--second-font);
+    text-transform: capitalize;
+}
+
+/* start section contact */
+.contact .connecting {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 7vh;
+}
+.contact .connecting .conctlist li{
+   padding-bottom: 1.6vh;
+}
+.contact .connecting .conctlist li i {
+    color: var(--maincolor1);
+    font-size: 25px;
+}
+.contact .connecting .conctlist li h3{
+    color: var(--maincolor2);
+    font-family: var(--mainfont);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.contact .connecting .conctlist li p{
+    color: var(--paragragh-color);
+}
+.contact .us {
+    display: flex;
+    gap: 5vh;
+    width: 80%;
+    margin: auto;
+}
+.contact .us .location, .feedback{
+    width: 50%;
+}
+.contact .us .location iframe{
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+.contact .us .feedback form div {
+    padding-bottom: 2vh;
+}
+.contact .us .feedback form div input, textarea{
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid darkgrey;
+    font-family: var(--second-font);
+    text-transform: capitalize;
+}
+.contact .us .feedback form div input:focus, textarea:focus{ 
+    outline: 1px solid var(--maincolor1);
+}
+.contact .us .feedback form div #sub{
+    width: 70%;
+    background-color: var(--maincolor1);
+    color: var(--maincolor2);
+    font-family: var(--mainfont);
+    transition: 0.5s ease;
+}
+.contact .us .feedback form div #sub:focus{
+    /* scale: 1.05; */
+    transform: translateY(5px);
+    outline: 1px solid var(--maincolor2);
+}
+.contact .us .feedback form div textarea{
+    max-width: 100%;
+    height: 20vh;
+    min-height: 10vh;
+    max-height: 40vh;
+}
+.arrows{
+    display: flex;
+}
+.arrows .comeback-botton, .arrows .down{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: var(--maincolor1);
+    position: fixed;
+    left: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: arrows;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+    z-index: 100;
+}
+.comeback-botton {
+    bottom: 8vh;
+}
+.down{
+    bottom: 3.2vh;
+}
+.comeback-botton a:hover, .down a:hover {
+    color: var(--background_color);
+}
+.comeback-botton a, .down a {
+    color: var(--maincolor2);
+    font-size: 25px;
+}
+
+@keyframes arrows{ 
+   to {
+        transform: translateY(-10px);      
+        transition-duration: 0.1s;
+    }
+}
+label #bars,
+label #cancel
+{
+    float: right;
+    margin-right: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+label #bars:hover,
+label #cancel:hover{
+    color: var(--maincolor1);
+}
+#check{
+    display: none;
+}
+
+/* meadia Queery */ /* meadia Queery *//* meadia Queery */
+
+@media (max-width: 1200px)
+{
+    /* ===start about style ===*/
+    .about .about_vision .our-vision ul li, .about .about_vision .our-vision ul li i {
+     font-size: 15px;
+    }
+    .about .about_vision .our-story p, .our-vision p{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .about .about_vision .our-story h4{
+        font-size: 17.5px;
+    }
+  /* ===end about style ===*/
+
+  /* ===start footer style === */
+    footer .bg-color2 .foot .list1, footer .bg-color2 .foot .list3{
+        width:23%;
+    }
+    footer .bg-color2 .foot .list4{
+        width: 32%;
+    }
+    footer .bg-color2 .foot .list4 form input{
+        padding: 10px;
+    }
+    footer .bg-color2 .foot .list4 .submit {
+        border: 2px;
+        padding: 11px;
+    }
+    footer .bg-color2 .foot .list2 .icons a i{
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+      /* === end footer style === */
+}
+
+@media (max-width: 992px)
+{
+/* ===start about style ===*/
+    .about .about_vision p, .about .about_vision .our-vision ul li {
+     font-size: 13px;
+    }
+    .about .about_vision .our-story h4{
+        font-size: 14.5px;
+    }
+
+    .about .about_vision .our-story p{
+        line-height: normal;
+    }
+    .about .about_vision a{
+     padding: 10px 20px;
+     }
+/* ===end about style ===*/
+    
+    .service .types .service-inform .line1 h3 {
+     font-size: 14px;
+    }
+    .service .types .service-inform .line1 i{
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    }
+    .service .types .service-inform p {
+    font-size: 13px;
+    } 
+  /*end service style  */
+     /* start menu style  */
+    .menu .menu-contant .lorem p {
+        font-size: 12px;
+    }
+    .menu .menu-contant .lorem h4{
+        font-size: 15px;
+        padding-bottom: 0.2vh;
+    }
+    .menu .menu-contant .lorem{
+        padding: 2.3vh 0;
+    }
+    .menu .menu-contant .img-coffee img {
+        width: 100px;
+        height: 100px;
+    }
+    /* end menu style  */
+
+  /*start reservation style  */
+     .main-pages .reservation .online-reservation .bg-color3 .container ul li 
+     {
+        font-size: 17px;
+     }
+     .main-pages .reservation .online-reservation .bg-color3 .container h3 
+     {
+        font-size: 20px;
+     }  
+
+     .testimonial .our-clients .total .img-name .name h3 {
+        font-size: 12px;
+     }
+     .testimonial .our-clients .total .img-name .name p, .testimonial .our-clients .total p{
+        font-size: 10px;
+        width: 90%;
+     }
+     .testimonial .our-clients .total .img-name img {
+         width: 60px;
+         height: 60px;
+     }
+     /* end reservation and testimonial style */
+
+/* start footer style */
+    footer{
+        background-size: cover;
+    }
+    footer, footer .bg-color2 {
+        height: auto;
+    }
+    footer .bg-color2 .foot{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        justify-content: space-around;
+        align-items:baseline;
+        align-content: space-between;
+        row-gap: 6vh;
+        height: auto;
+        padding: 5vh 0vh;
+    }
+    footer .bg-color2 .foot .list h2{
+        color: var(--maincolor1);
+    }
+    footer .bg-color2 .foot .list{
+        width: 100%;
+    }
+    footer .bg-color2 .foot .list2 .icons a i{
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        font-size: 19px;
+    }   
+/* end footer style */
+}
+
+@media (max-width: 914px)
+{
+    .about .about_vision .our-story, .our-vision, .center{
+        gap: 0vh;
+    }    
+    .about .about_vision p, .about .about_vision .our-vision ul li {
+     font-size: 10px;
+    }
+    .about .about_vision .our-story h4{
+        font-size: 12px;
+    }
+    .about .about_vision .our-story p, .our-vision p{
+        font-size: 10px;
+    }
+    .about .about_vision .our-vision ul li i {
+        font-size: 13px;
+        padding-right: 4px;
+    } 
+}
+
+@media (max-width: 780px)
+{
+     /* ==== start header and navbar style ===*/
+header, header .bg{
+    height: 60vh;
+}   
+header .bg .introduction{
+    padding-top: 22vh;
+}
+header .bg nav ul, header .bg nav ul .ul-bg
+{
+    height: 50vh;
+}  
+header .bg nav ul .ul-bg li 
+{
+    padding: 12px 0px;
+} 
+header .bg nav ul .ul-bg{
+    padding-top: 2.5vh;
+}
+
+nav
+{
+    background-color: #33211d;
+    height: 10vh;
+    padding: 14px 20px;
+}
+nav ul
+{
+text-align: center;
+width: 100%;
+position: absolute;
+top: 10vh;
+left: 100%;
+background-image: url(../img/carousel-2.jpg);
+background-size: 100% 100%;
+/* transform: rotateY(90deg); */
+transform-origin: top right;
+transition:all 1s ;
+}
+nav ul .ul-bg
+{
+    background-color:#2c1919c9;
+    height: 50vh;
+    display: block;
+    padding-top: 2vh;
+}
+
+label #bars{
+         display: block;
+         /* color: var(--maincolor1); */
+     }
+#check:checked ~ ul{
+         /* transform: rotateY(0deg); */
+         left: 0%;
+     }
+#check:checked ~ label #bars{
+    display: none;
+} 
+#check:checked ~ label #cancel{
+    display: block;
+    color: var(--maincolor1);
+}
+
+nav ul li {
+    padding: 12px 0px;
+    box-shadow: 0px 1px 8px transparent;
+    transition: 0.5s ease;
+ }     
+nav ul .ul-bg li a {
+     font-size: 20px;
+     font-weight: 500;
+ }
+nav ul .ul-bg{
+        box-shadow: 5px 10px 14px var(--maincolor2);
+     }
+ nav ul .ul-bg li:hover {
+      border-radius: 5px;
+      box-shadow: 0px 1px 8px var(--maincolor1);
+     }
+ nav ul .ul-bg li a:hover::before
+ {
+    transform: scaleX(0);
+ }   
+nav ul .ul-bg .list .pages p:hover{
+     transform: scale(1.05);
+     }
+ nav ul .ul-bg .list .saka{
+     border: 1px solid transparent;
+     padding: 10px;
+     border-radius: 10px;
+ }
+ .fa-caret-right {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    bottom: -0.5vh;
+    left: 0%;
+}
+.fa-caret-down{
+    display: none;
+}
+nav ul .ul-bg li .pages {
+    top: -9.1%;
+    left: 59%;
+    width: 18vh;
+    padding: 0;
+}
+.navBar .bg-color2 nav ul .ul-bg li .pages{
+    top: -17%;
+    left: 61%;
+}
+ nav ul .ul-bg li .pages a {
+     color:var(--maincolor2);
+     font-size: 15px;
+ }
+ nav ul .ul-bg li .pages p {
+     padding-bottom: 5px;
+ }
+ nav ul .ul-bg .list:hover .pages{
+     display: block;
+ }
+ nav ul .ul-bg li .pages a:hover{
+     color: var(--maincolor1);
+ } 
+ /* ==== end header and navbar style ===*/
+
+ /* ==== start about style */
+    .about .about_vision .our-story, .our-vision, .center{
+        width: 100%;
+    }
+    .about .about_vision{
+        flex-direction: column;
+    }
+    .about .about_vision .our-story, .our-vision {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom:10vh;   
+    }
+    .about .about_vision h3{
+        font-size: 40px;
+        margin-bottom: 4vh;
+    }
+   .about .about_vision .center{
+      margin-bottom:6vh;   
+    }
+    .about .about_vision .our-vision ul li{
+     font-size: 20px;
+    }
+    .about .about_vision .our-story h4{
+        font-size: 20px;
+        line-height: 5vh;
+    }
+    .about .about_vision p{
+        line-height:3.5vh;
+        font-size: 15px;
+        padding-bottom: 2vh;
+    }
+    .about .about_vision .our-story p{
+        line-height:3.5vh;
+        font-size: 15px;
+    }
+    .about .about_vision .our-story h4, .about .about_vision .our-vision ul{
+        padding-bottom: 2vh;
+    }
+    .about .about_vision a{
+        padding: 2%;
+        font-size: 19px;
+    } 
+    .about .about_vision .link1{
+      display: contents;
+    }   
+    .about .about_vision .our-vision ul li i{
+        font-size: 18px;
+        padding-right: 8px;
+    }
+ /* =====end about style */
+
+ /* start style service */
+    .service .service-offer{
+        background-size: cover;
+    }
+    .service .types{
+        display: block;
+        width: 70%;
+    }  
+    .service .types img{
+        width: 80%;
+        height: 80%;
+    }   
+    .service .types .service-img{
+        padding-top: 6vh;
+    } 
+    .service .types .service-img, .service-inform{
+        padding-bottom: 2vh;
+    } 
+    .service .types .service-inform .line1 h3 {
+        font-size: 22px;
+    }
+    .service .types .service-inform p {
+        font-size: 19px;
+    }
+    .service .types .service-inform .line1 i {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+    .service .service-offer .bg-color .main-offer {
+        margin: 8vh auto;
+    }
+    .service .service-offer .bg-color .img_bottom img, .service .service-offer .bg-color .img_top img{
+        width: auto;
+    }
+/*===== end style service ===== */
+
+ /*=== start menu style ==== */
+    .menu .menu-contant {
+        grid-template-columns: 1fr;
+    }
+    .menu .menu-contant .lorem p {
+        font-size: 16px;
+    }
+    .menu .menu-contant .lorem h4{
+        font-size: 18px;
+        padding-bottom: 0.6vh;
+    }
+    .menu .menu-contant .lorem{
+        padding: 1.3vh 0;
+    }
+    .menu .menu-contant .img-coffee img {
+        width: 90px;
+        height: 90px;
+    }
+     /* end menu style  */
+/* ==== start reservation style ==== */
+    .main-pages .reservation .Reserv{
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+    .main-pages .reservation .Reserv .img_bottom img {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        margin-top: 4.8vh;
+    }
+    .main-pages .reservation .online-reservation, .main-pages .reservation .form-reservation{
+        width: 100%;
+    }
+     .main-pages .reservation .online-reservation .bg-color3 .container ul li {
+        font-size: 20px;
+     }
+     .main-pages .reservation .online-reservation .bg-color3 .container h3 {
+        font-size: 25px;
+     }
+     .main-pages .reservation .form-reservation .bg-color4  h3 {
+        font-size: 30px;
+     }
+     .main-pages .reservation .online-reservation .bg-color3 .container h2{
+        font-size: 50px;
+     }
+     .main-pages .reservation .online-reservation .bg-color3 .container p{
+        font-size: 18px;
+     }
+     .main-pages .reservation .form-reservation .bg-color4 {
+        padding-top: 0vh;
+    }
+    .main-pages .reservation .img_top img {
+        width: auto;
+        height: 4vh;
+    }
+/* ==== end reservation style ======= */    
+/* ==== start section testimonial=== */
+.testimonial .our-clients{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 7vh;
+    column-gap: 9vh;
+}
+.testimonial .our-clients .total .img-name{
+  display: flex;
+  align-items: center;
+  gap: 1.5vh;
+  padding-bottom: 1vh;
+}
+.testimonial .our-clients .total .img-name img{
+    width: 80px;
+    height: 80px;
+}
+
+.testimonial .our-clients .total .img-name .name h3{
+    padding-bottom: 1.5vh;
+    font-size: 15px;
+}
+.testimonial .our-clients .total p {
+    font-size: 14px;
+    width: 100%;
+}
+.testimonial .our-clients .total .img-name img{
+ width: 60px;
+ height: 60px;
+}
+/* ==== end section testimonial */
+.contact .us{
+    flex-direction: column;
+}
+.contact .us .location, .feedback{
+    width: auto;
+}
+.contact .us .location{
+    height: 50vh;
+}
+
+header .img_bottom img, .service .service-offer .img_top img, .service .service-offer .bg-color .img_bottom img, footer .bg-color2 .img_bottom img, .navBar .img_top img 
+    {
+        width: auto;
+    }   
+.arrows .comeback-botton, .arrows .down{
+    left: 89%;
+}     
+}
+
+@media (max-width: 480px)
+{
+    /* start header and nav style */
+    header .bg .introduction h1  {
+         font-size:85px;
+         padding-bottom: 2vh;
+    }
+header .bg .introduction h3{
+        font-size: 20px;
+        padding-bottom: 2vh;
+    }          
+header .bg .introduction h2   {
+      font-size: 23px;
+   }
+
+label #bars, label #cancel{
+    margin-right: 0vh;
+  }
+    .navBar .bg-color2 .bars h1{
+        font-size: 39px;
+    }
+    nav ul .ul-bg li .pages {
+        top: -9.1%;
+        left: 63%;
+        width: 15vh;
+        padding: 0;
+    }
+    .navBar .bg-color2 nav ul .ul-bg li .pages{
+        top: -17%;
+        left: 62%;
+    }
+    nav ul .ul-bg li .pages a {
+        font-size: 12px;
+    }
+   /* end header and nav style */  
+
+    .about .about_vision .our-story h4, .about .about_vision .our-story p {
+        line-height: normal;
+    }
+     .about .about_vision  p{line-height: normal;} 
+    .about .about_vision .our-vision {
+        margin: 7vh 0 10vh 0;
+    }
+
+    .service .types{
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        gap: 25px;
+    }
+    .service .types .service-inform p {
+        font-size: 12px;
+    }
+    .service .types .service-inform .line1 h3{
+        font-size: 15px;
+    }
+    .service .types img {
+        width: 90%;
+        height: 90%;
+    }  
+    /* start pages style */
+    .main-pages .reservation .online-reservation .bg-color3 .container ul li, .main-pages .reservation .online-reservation .bg-color3 .container ul li i {
+       font-size: 16px;
+    }
+    .main-pages .reservation .online-reservation .bg-color3 .container h3 {
+       font-size: 23px;
+    }
+    .main-pages .reservation .form-reservation .bg-color4  h3 {
+       font-size: 30px;
+    }
+    .main-pages .reservation .online-reservation .bg-color3 .container h2{
+       font-size: 35px;
+    }
+    .main-pages .reservation .online-reservation .bg-color3 .container p{
+       font-size: 15px;
+    }
+    .main-pages .reservation .online-reservation .bg-color3{
+        padding-left: 3vh;
+    }
+    
+    .testimonial .our-clients{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+    .testimonial .our-clients .total .img-name{
+      display: flex;
+      align-items: center;
+      gap: 1.5vh;
+      padding-bottom: 1vh;
+    }
+    .testimonial .our-clients .total .img-name img{
+        width: 70px;
+        height: 70px;
+    }
+    .testimonial .our-clients .total .img-name .name h3{
+        padding-bottom: 1vh;
+        font-size: 18px;
+    }
+    .testimonial .our-clients .total  p{
+      font-size: 16px;
+    }
+    /* end pages style */
+    .contact .connecting{
+        flex-direction: column;
+    }
+    .contact .connecting .conctlist li p {
+        font-size: 17px;
+    }
+
+    .arrows .comeback-botton, .arrows .down{
+        left: 84%;
+    }
+
+    footer .bg-color2 .foot  {
+        grid-template-columns: 1fr;
+    }
+    footer .bg-color2 .end .one {
+        font-size: 15px;
+    }
+    footer .bg-color2 .foot .list2 .icons a i {
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+        font-size: 25px;
+        margin-right: 1vh;
+    }
+    footer .bg-color2 .foot .list li {
+        padding-bottom: 2vh;
+        font-size: 18px;
+    }
+    footer .bg-color2 .foot .list p{
+        width: auto;
+        padding-bottom: 2.5vh;
+    }
+    footer .bg-color2 .foot .list2 .icons{
+        justify-content: center;
+    }
+    footer .bg-color2 .foot .list4 form input[type=email] 
+    {
+        width: 70%;
+    }
+    footer .bg-color2 .foot .list4 .form-offer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .repeat h2{
+        font-size: 32px;  
+    }
+    .repeat p{
+       font-size: 18px;
+       letter-spacing: 3px; 
+     }
+}
+
+@media (max-width: 323px)
+{
+    header .bg .introduction h1  {
+                 font-size:63px;
+                 padding-bottom: 2vh;
+            }
+    header .bg .introduction h3 {
+                font-size: 15px;
+                padding-bottom: 2vh;
+            }          
+    header .bg .introduction h2   {
+              font-size: 28px;
+           }
+            
+    .repeat h2{
+            font-size: 30px;
+           }
+   
+    .service .types .service-img {
+        padding-top: 4vh;
+    } 
+    .service .types .service-img, .service-inform{
+        padding-bottom: 2vh;
+    } 
+    .service .service-offer .bg-color .main-offer{
+        margin: 3vh auto;
+    }
+    .repeat h2{
+        font-size: 26px;
+    }
+    .about .about_vision h3 {
+        font-size: 20px;
+    }
+    .about .about_vision .our-story h4{
+        font-size: 18px;
+    }
+    .about .about_vision .our-vision .douple li{
+       font-size: 15px;
+    }
+    .about .about_vision .our-story {
+        margin-bottom: 15vh;
+    }
+    .about .about_vision .our-vision{
+        margin-top: -2vh;
+    }
+    
+    .form-offer form input{
+        padding: 8px;
+    }
+    .form-offer form .submit{
+        padding: 9px;
+    } 
+
+    .menu .menu-contant .cold-coffee, .menu .menu-contant .hot-coffee{
+        font-size: 15px;
+        margin: 0;
+    }
+    .menu .menu-contant .lorem h4{
+       font-size: 11px;
+       margin-top: -1vh;
+    }   
+    .menu .menu-contant .lorem p{
+       font-size: 9px;
+    }
+    .menu .menu-contant .img-coffee img {
+         width: 50px;
+       height: 50px;
+    }
+    .menu .menu-contant .img-coffee .salary {
+        position: relative;
+        width: 13px;
+        font-size: 12px;
+        padding: 10px;
+        height: 13px;
+        bottom: 78%;
+    }
+    .main-pages .reservation .online-reservation .bg-color3 .container ul li {
+        font-size: 13px;
+    }
+
+    .testimonial .our-clients .total p {
+        font-size: 12px;
+    }
+    .testimonial .our-clients .total .img-name .name h3 {
+        font-size: 14px;
+    }
+}
