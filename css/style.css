@@ -23,7 +23,39 @@ header{
     background-image: url(../img/carousel-1.jpg);
     background-size: 100% 100%;
     overflow: hidden;
+    /* transition: 0.5s ease; */
+    animation: bg 20s infinite ease-in-out;
 }
+/* header:hover
+{
+    background-image: url(../img/R.jpeg);
+} */
+@keyframes bg
+{
+    0%
+    {
+       background-image: url(../img/carousel-2.jpg);
+    }
+    20%
+    {
+        background-image: url(../img/R.jpeg);
+    }
+    40%
+    {
+        background-image: url(../img/R\ \(1\).jpeg)
+    }
+    60%
+    {
+        background-image: url(../img/carousel-2.jpg);
+    }
+    80%
+    {
+        background-image: url(../img/R.jpeg);
+    }
+    100%
+    {
+        background-image: url(../img/carousel-2.jpg);
+    }
 header .bg{
     background-color: #2c1919bd;;
     height: 100vh;    
