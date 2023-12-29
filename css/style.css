@@ -24,12 +24,6 @@ header{
     background-size: 100% 100%;
     overflow: hidden;
 }
-/* header:hover
-{
-    background-image: url(../img/R.jpeg);
-} */
-
-}
 header .bg{
     background-color: #2c1919bd;
     height: 100vh;    
