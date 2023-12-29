@@ -440,7 +440,7 @@ input[type=submit]{
 .drink:hover
 {
     border: 2px solid var(--maincolor1);
-    border-radius: 5px;
+   border-radius: 14px;
 }
 
 .menu .menu-contant h3, .menu .menu-contant .lorem h4 {
@@ -1493,6 +1493,9 @@ label #bars, label #cancel{
         font-size: 17px;
         margin: 0;
     }
+     .drink:hover{
+    border-radius: 4px 70px;
+    }
     .menu .menu-contant .lorem h4{
        font-size: 14px;
        margin-top: -0.3vh;
@@ -1511,8 +1514,6 @@ label #bars, label #cancel{
         padding: 13px;
         bottom: 83%;
     }
-
-
     /* start pages style */
     .main-pages .reservation .online-reservation .bg-color3 .container ul li, .main-pages .reservation .online-reservation .bg-color3 .container ul li i {
        font-size: 16px;
@@ -1658,7 +1659,9 @@ label #bars, label #cancel{
     .about .about_vision .our-vision{
         margin-top: -2vh;
     }
-    
+      .drink:hover{
+    border-radius: 4px 50px;
+    }
     .form-offer form input{
         padding: 8px;
     }
